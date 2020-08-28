@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/public.css">
+    <link rel="stylesheet" href="./css/Collection.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2030060_5niwmtst4qk.css">
+    <script src="../jquery-3.5.1.js"></script>
+</head>
+<body>
+    <div class="boss">
+        <!-- eject--警告框！！！ -->
+        <div class="eject"> 
+            <div class="option">
+                <div class="option_top">确定要删除该收藏记录吗？</div>
+                <div class="option_left">取消</div>
+                <div class="option_right">删除</div>
+            </div>
+        </div>
+        <div class="header">
+            <img src="./img/title.png" alt="" class='titleImg'>
+            <div class="title">
+                <img src="./img/return.png" alt="" class="titleImg1">
+                <h2>我的收藏</h2>
+                <span id='run'>管理</span>
+            </div>
+        </div>
+        <div class="header-fixed"></div>
+        <div class="search">
+            <div class="search_main">
+                <span class="iconfont">&#xe67e;</span>
+                <input type="text" placeholder="搜索我收藏的商品">
+            </div>
+        </div>
+        <p class="total"></p>
+        <div class="commodity">
+            <img src="./img/Unchecked.png" alt="" class="block">
+            <img src="./img/goods1.png" alt="">
+            <div class="ProductIntroduction">
+                <p>依泉润唇膏套装 保湿滋润补水无色防干裂 唇部护理唇膜淡化唇纹护唇膏... </p>
+                <div class="norms">
+                    <p>8g/ml</p><p>¥98.9</p>
+                </div>
+            </div>
+        </div>
+        <div class="commodity">
+            <img src="./img/Unchecked.png" alt="" class="block" checked>
+            <img src="./img/goods2.png" alt="">
+            <div class="ProductIntroduction">
+                <p>专柜正品YSL圣罗兰口红方管迷魅纯漾亮采唇膏 </p>
+                <div class="norms">
+                    <p>1#正红色</p><p>¥138.0</p>
+                </div>
+            </div>
+        </div>
+        <div class="delete">删除</div>
+       
+        </div>
+        
+</body>
+<script src="./js/flexible.js"></script>
+<script src="./js/Collection.js"></script>
+</html>

@@ -1,0 +1,198 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.boss {
+  width: 10rem;
+  margin: 0 auto;
+ 
+  position: relative;
+  //警告框
+  .eject {
+    height: 2.4rem;
+    background-color: #e90c0c;
+    background: rgba(171, 171, 171, 0.5);
+    position: absolute;
+    z-index: 1;
+    display: none;
+    .option {
+      width: 6.666667rem;
+      height: 2.4rem;
+      background-color: #ffffff;
+      border-radius: 20px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      margin-left: -3.333333rem;
+      margin-top: -1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      .option_top{
+        width: 6.666667rem;
+        height:1.2rem;
+        border: 1px solid #e0e0e0;
+        font-size: 0.32rem;
+        text-align: center;
+        line-height: 1.2rem;
+      }
+      .option_left, .option_right{
+        height:1.2rem;
+        font-size: 0.373333rem;
+        text-align: center;
+        line-height: 1.2rem;
+      }
+      .option_left{
+        width: 3.333333rem;
+        border-right:1px solid #e0e0e0;
+      }
+      .option_right{
+        width:3.306667rem;
+        color: #ff9326;
+      }
+    }
+  }
+  .header-fixed {
+    width: 10rem;
+    height: 1.706667rem;
+    background: white;
+    padding-top: 0.12rem;
+  }
+  .header {
+    width: 10rem;
+    height: 1.706667rem;
+    background: white;
+    padding-top: 0.12rem;
+    position: fixed;
+    .titleImg {
+      margin: 0 auto 0;
+      display: block;
+      width: 9.6rem;
+    }
+    .title {
+      width: 8.933333rem;
+      height: 0.453333rem;
+      margin: 0.466667rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      line-height: 0.453333rem;
+      h2 {
+        font-size: 0.4rem;
+      }
+      .titleImg1 {
+        display: block;
+        width: 0.213333rem;
+        height: 0.4rem;
+      }
+      span {
+        color: #999999;
+        font-size: 0.32rem;
+        cursor: pointer;
+      }
+    }
+  } //header
+  .search {
+    width: 10rem;
+    height: 1.56rem;
+    background-color: #ffffff;
+    margin: 0.133333rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search_main {
+      width: 8.533333rem;
+      height: 0.8rem;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 0.32rem;
+        color: #666666;
+        margin: 0 0.266667rem;
+      }
+      input {
+        height: 100%;
+        width: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 0.32rem;
+      }
+    }
+  }
+  .total {
+    color: #999999;
+    font-size: 0.24rem;
+    margin: 0 0 0.133333rem 0.266667rem;
+  }
+  .commodity {
+    width: 9.466667rem;
+    height: 3.2rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(171, 171, 171, 0.1);
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.266667rem;
+    .ProductIntroduction {
+      width: 5.626667rem;
+      height: 1.946667rem;
+      p {
+        font-size: 0.293333rem;
+        color: #000000;
+      }
+    }
+    img:nth-child(1) {
+      width: 0.426667rem;
+      height: 0.426667rem;
+      opacity: 0;
+    }
+    img:nth-child(2) {
+      width: 1.946667rem;
+      height: 1.946667rem;
+    }
+    .norms {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.266667rem;
+      p:nth-child(1) {
+        color: #999999;
+        font-size: 0.24rem;
+      }
+      p:nth-child(2) {
+        color: #ff3333;
+        font-size: 0.24rem;
+      }
+    }
+  }
+  .delete {
+    width: 9.466667rem;
+    height: 1.333333rem;
+    background-color: #ff9326;
+    border-radius: 5px;
+    margin: 0.666667rem auto;
+    text-align: center;
+    line-height: 1.333333rem;
+    color: #ffffff;
+    font-size: 0.48rem;
+    display: none;
+  }
+  //购物车为空时的样式
+  .hollow{
+    // margin: 0 auto;
+    text-align: center;
+    margin-top: 3.333333rem;
+    h3{
+      color: #000000;
+      font-size: 0.373333rem;
+      margin: 0.133333rem 0;
+    }
+    p{
+      color: #666666;
+      font-size: 0.32rem;
+    }
+  }
+}
